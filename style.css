@@ -11,7 +11,7 @@
     animation:opac 3000ms steps(10000) 1;
 }
 body{
-    background-image: url('images/Clear-day.jpg');
+    background-image: url('images/Clear-day.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
