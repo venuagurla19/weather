@@ -53,6 +53,18 @@ try {
     return;
 }
 
+try {
+    const response = await fetch(tempUrl);
+    if (!response.ok) {
+        throw new Error('Network response was not ok');
+    }
+    result = await response.json();
+} catch (error) {
+    alert("Network error or API limit reached. Please check your connection and try again.");
+    console.error('Fetch error:', error);
+}
+
+
 updateWeatherInfo(dayOffset);
 }
 
