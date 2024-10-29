@@ -38,7 +38,7 @@ let others = document.querySelector("#others");
 
 let count = 0;
 let result;
-let urlTemplate = "https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/[CITY]?unitGroup=us&include=days%2Cevents&key=YOUR_API_KEY&contentType=json";
+let url="https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/hyderabad?unitGroup=us&include=days%2Cevents&key=7VNDDSKQZWW5GKCWREYN35BDC&contentType=json";
 
 async function fetchWeatherData(dayOffset = 0) {
 let city = document.querySelector("#search").value.toLowerCase() || "hyderabad";
